@@ -3,7 +3,7 @@ module NewRelic::Plugin::Unicorn
     attr_reader :pid_file
 
     def initialize(rails_root, pid_name)
-      @pid_file = "#{rails_root}/tmp/pids/#{pid_name}"
+      @pid_file = "#{rails_root}/tmp/#{pid_name}"
     end
 
     private
